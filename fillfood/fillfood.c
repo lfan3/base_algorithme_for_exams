@@ -1,24 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-typedef int t_point[2];
-
-void print_tab(char **tab, t_point size)
-{
-    int i = -1;
-   
-    int x = size[0];
-    int y = size[1];
-    
-    while (++i < y)
-    {
-       int j = -1;
-        while(++j < x)
-            printf("%c ",tab[i][j]);
-        printf("\n");
-    }
-}
-
+#include "t_point_h"
 void    flood_fill_until(char **tab, int size_x, int size_y, char to_replace, int begin_x, int begin_y)
 {
         t_point size = { 8, 5 };

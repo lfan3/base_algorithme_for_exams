@@ -35,3 +35,6 @@ t_t *push_list(int data, t_t *head)
     return (new_head);
 }
 
+## FIILFOOD
+- PERFECT!
+- dans le if the recursive, tab[x][y] != to_replace musted be checked after verification of the position x and y: x<0 y<0 x>=size.x y >= size.y
