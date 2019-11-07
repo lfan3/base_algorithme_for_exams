@@ -38,3 +38,7 @@ t_t *push_list(int data, t_t *head)
 ## FIILFOOD
 - PERFECT!
 - dans le if the recursive, tab[x][y] != to_replace musted be checked after verification of the position x and y: x<0 y<0 x>=size.x y >= size.y
+
+## Cycle_detector
+- attention to the condition in the while of circle_detector in the fichier floy_cycle_dectetor_improved.c
+
