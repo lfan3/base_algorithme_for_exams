@@ -16,8 +16,8 @@ void push_list(int data, t_t **head)
 void pop_list(t_t **head)
 {
     t_t *to_free;
+    
     to_free = *head;
-//?? change the positjion to see what will happen
     *head = (*head)->next;
 
     free(to_free);

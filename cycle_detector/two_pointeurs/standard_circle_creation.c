@@ -16,21 +16,21 @@ t_item     *item_init(int data)
 t_item     *push(t_item *head, int data)
 {
     t_item *new;
-    t_item *tete;
+    t_item *tmp;
 
-    tete = head;
+    tmp = head;
     if (!(new = malloc(sizeof(t_item))))
         return NULL;
     new->data = data;
     new->next = NULL;
-    while(tete->next)
+    while(tmp->next)
     {
-        tete = tete->next;
+        tmp = tmp->next;
     }
-    tete->next = new;
+    tmp->next = new;
     return (head);
 }
-
+//tail connect to the seconde node of the chain
 t_item     *connection(t_item *head)
 {
     t_item *tmp;
@@ -57,9 +57,10 @@ t_item     *circle()
     head = connection(head);
     return head;
 }
-/*
+
 int main()
 {
+    /*
     int i = 0;
     t_item *head = circle();
     while(i < 20)
@@ -68,5 +69,12 @@ int main()
         head = head ->next;
         i++;
     }
+    */
+    t_item *head =  NULL;
+    head = item_init(1);
+    head = push(head, 2);
+    head = push(head, 3);
+    printf("head %d\n", head->data);
+    printf("head %d\n", head->next->data);
+
 }
-*/
