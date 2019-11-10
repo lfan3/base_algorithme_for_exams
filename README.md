@@ -41,3 +41,6 @@ t_t *push_list(int data, t_t *head)
 ## Cycle_detector
 - attention to the condition in the while of circle_detector in the fichier floy_cycle_dectetor_improved.c
 
+## brainfuck
+- (*ptr)++ et ptr++ ne sont pas pareille!
+
