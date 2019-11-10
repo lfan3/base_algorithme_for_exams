@@ -4,14 +4,13 @@
 - utilisation d'atoi, char *str = "10 12c", atoi(str) = 10;
 - dans le fichier helper, do not need if else, un single jugement, use return directly
 ### schema basique à bien maitriser ----- très important
->
+~~~~
 typedef struct  s_s
 {
     int         data;
     struct s_s  *next;
 }               t_t
->
-simple head_node
+
 t_t *head == NULL;
 
 t_t *push_list(int data, t_t *head)
@@ -34,7 +33,7 @@ t_t *push_list(int data, t_t *head)
     head->next = tmp;
     return (new_head);
 }
-
+~~~~
 ## FIILFOOD
 - PERFECT!
 - dans le if the recursive, tab[x][y] != to_replace musted be checked after verification of the position x and y: x<0 y<0 x>=size.x y >= size.y
