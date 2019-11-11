@@ -44,3 +44,23 @@ t_t *push_list(int data, t_t *head)
 ## brainfuck
 - (*ptr)++ et ptr++ ne sont pas pareille!
 
+## printmemo
+- different ways to write printmemo
+- see the differences of the belowing code:
+~~~~
+1, c = nu%16 + (nu%16<10 ? '0' : 'a'- 10);
+2, c = nu%16<10 ? nu%16 + '0' : nu%16 +'a'-10;
+3, c = nu%16 + (nu%16<10)? '0' : 'a'-10;
+
+1 VS 2 same thing, but 1 simpler
+2 VS 3 different calcule !!
+~~~~
+
+## printmemo
+~~~~
+void print_memory(const void **addr, size_t size);
+const int *tab = (const int*)addr;
+size_t len = size / sizeof(int);
+~~~~
+
+
