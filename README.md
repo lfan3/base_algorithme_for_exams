@@ -61,6 +61,8 @@ t_t *push_list(int data, t_t *head)
 void print_memory(const void **addr, size_t size);
 const int *tab = (const int*)addr;
 size_t len = size / sizeof(int);
+or even more general
+size_t len = size / sizeof(tab[0]);
 ~~~~
 
 
